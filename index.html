@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="resultado">
+            <span>0</span>
+        </div>
+        <div class="buttons">
+            <button id="clear" class="item item1 clear">AC</button>
+            <button id="negative" class="item item1 negative">+/-</button>
+            <button id="percent" class="item percent sing">%</button>
+            <button class="item item3 sing" value="/" onclick="pegarSinal(event)">÷</button>
+            <button class="item numbers" value="7" onclick="pegarPrimeiroValor(event)">7</button>
+            <button class="item numbers" value="8" onclick="pegarPrimeiroValor(event)">8</button>
+            <button class="item numbers" value="9" onclick="pegarPrimeiroValor(event)">9</button>
+            <button class="item item3 sing" value="x" onclick="pegarSinal(event)">x</button>
+            <button class="item numbers" value="4" onclick="pegarPrimeiroValor(event)">4</button>
+            <button class="item numbers" value="5" onclick="pegarPrimeiroValor(event)">5</button>
+            <button class="item numbers" value="6" onclick="pegarPrimeiroValor(event)">6</button>
+            <button class="item item3 sing" value="-" onclick="pegarSinal(event)">-</button>
+            <button class="item numbers" value="1" onclick="pegarPrimeiroValor(event)">1</button>
+            <button class="item numbers" value="2" onclick="pegarPrimeiroValor(event)">2</button>
+            <button class="item numbers" value="3" onclick="pegarPrimeiroValor(event)">3</button>
+            <button class="item item3 sing" value="+" onclick="pegarSinal(event)">+</button>
+            <button class="item itemZero numbers" value="0" onclick="pegarPrimeiroValor(event)">0</button>
+            <button id="virgula" class="item virgula">.</button>
+            <button id="igual" class="item item3 igual" onclick="igual()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 30px 25px 0 0;
+}
+
+.resultado {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    height: 39%;
+}
+
+.resultado span {
+    font-size: 5.8rem;
+    justify-self: flex-end;
+}
+
+.buttons {
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    color: white;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+
+.percent,
+.item1 {
+    background-color: #A5A5A5;
+    border: none;
+    color: black;
+}
+
+.percent:active,
+.item1:active {
+    transition: .3s;
+    background-color: #dbd8d8;
+}
+
+.item3 {
+    background-color: #FF9F0A;
+    border: none;
+}
+
+.item3:active {
+    background-color: white;
+    color: #FF9F0A;
+    transition: .3s;
+}
+
+.igual:active {
+    background-color: #ffb03a;
+    color: #fff;
+}
+
+.numbers,
+.virgula {
+    background-color: #343434;
+    border: none;
+}
+
+.numbers:active,
+.virgula:active {
+    background-color: #5a5858;
+    transition: .3s;
+}
+
+.itemZero {
+    padding-left: 25px;
+    justify-content: flex-start;
+    width: 165px;
+    border-radius: 135px;
+    grid-column: span 2;
+    text-align: start;
+}
