@@ -64,8 +64,7 @@ function igual() {
 }
 
 function checarTamanhoResultado() {
-    resultadoFinal = JSON.stringify(resultadoFinal);
-
+    resultadoFinal = String(resultadoFinal)
     if (resultadoFinal.length >= 8) {
         resultadoFinal = JSON.parse(resultadoFinal);
         resultado.innerHTML = resultadoFinal.toFixed(4)
