@@ -80,10 +80,6 @@ negativo.addEventListener('click', function () {
     if (primeiroValor != '' && segundoValor != '' && sinal != '') {
         resultadoFinal = -resultadoFinal
     }
-    else {
-        resultadoFinal = '0'
-        alert('Valor inválido')
-    }
     resultado.innerHTML = resultadoFinal;
 })
 
@@ -95,10 +91,6 @@ porcentagem.addEventListener('click', () => {
     }
     if (primeiroValor != '' && segundoValor != '' && sinal != '') {
         resultadoFinal = resultadoFinal / 100;
-    }
-    else {
-        resultadoFinal = '0'
-        alert('Valor inválido')
     }
     resultado.innerHTML = resultadoFinal;
 });
