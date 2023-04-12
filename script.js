@@ -10,6 +10,7 @@ let segundoValor = ''
 let temSegundoValor = false
 let sinal = ''
 let resultadoFinal = ''
+let temVirgula = false
 
 
 function pegarPrimeiroValor(valor) {
@@ -31,6 +32,7 @@ function pegarPrimeiroValor(valor) {
 function pegarSinal(sing) {
     sinal = sing.target.value
     temPrimeiroValor = true
+    temVirgula = false
 }
 
 limpar.addEventListener('click', () => {
@@ -59,6 +61,7 @@ function igual() {
     }
     resultado.innerHTML = resultadoFinal
     primeiroValor = resultadoFinal
+    temVirgula = false
     segundoValor = ''
     checarTamanhoResultado()
 }
@@ -96,8 +99,13 @@ porcentagem.addEventListener('click', () => {
 });
 
 virgula.addEventListener('click', function () {
-    if (!temPrimeiroValor) {
+    if (!temPrimeiroValor && !temVirgula) {
         primeiroValor += '.'
+        resultado.innerHTML = primeiroValor
+        temVirgula = true
+    }
+    if (primeiroValor == '' && !temVirgula) {
+        primeiroValor += '0.'
         resultado.innerHTML = primeiroValor
     }
     if (segundoValor != '') {
@@ -105,7 +113,7 @@ virgula.addEventListener('click', function () {
         resultado.innerHTML = segundoValor
     }
     if (segundoValor == '' && temPrimeiroValor) {
-        segundoValor += '0' + '.'
+        segundoValor += '0.'
         resultado.innerHTML = segundoValor
     }
 })
